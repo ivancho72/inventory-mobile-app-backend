@@ -7,10 +7,12 @@
     "develop": "strapi develop",
     "start": "node server.js",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "production": "cross-env NODE_ENV=production yarn build"
   },
   "devDependencies": {},
   "dependencies": {
+    "cross-env": "^7.0.2",
     "strapi": "3.0.0-beta.20",
     "strapi-admin": "3.0.0-beta.20",
     "strapi-connector-mongoose": "3.0.0-beta.20",
